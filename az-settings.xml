@@ -1,0 +1,23 @@
+<settings xmlns="http://maven.apache.org/SETTINGS/1.0.0"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0                               
+          http://maven.apache.org/xsd/settings-1.0.0.xsd">
+  <profiles>
+     <profile>
+       <id>azure</id>
+          <properties>
+          <azureFtpUrl>WEBAPP_FTP_URL</azureFtpUrl>
+          </properties>
+      </profile>
+  </profiles>
+  <servers>
+    <server>
+      <id>azure-hello-world</id>
+      <username>WEBAPP_USERNAME</username>
+      <password>WEBAPP_PASSWORD</password>
+    </server>
+  </servers>
+    <activeProfiles>
+    <activeProfile>azure</activeProfile>
+  </activeProfiles>
+</settings>
